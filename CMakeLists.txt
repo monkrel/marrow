@@ -19,3 +19,4 @@ target_compile_options(marrow_warnings INTERFACE
     $<$<BOOL:${MARROW_WARNINGS_AS_ERRORS}>:/WX>)
 
 add_subdirectory(src/core)
+add_subdirectory(src/app)
