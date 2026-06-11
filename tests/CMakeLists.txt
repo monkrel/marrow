@@ -1,6 +1,7 @@
 find_package(Catch2 CONFIG REQUIRED)
 
 add_executable(marrow_unit_tests
+    unit/uuid_tests.cpp
     unit/version_tests.cpp)
 
 target_link_libraries(marrow_unit_tests PRIVATE

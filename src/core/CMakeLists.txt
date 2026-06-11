@@ -1,5 +1,8 @@
 # Core domain library
 add_library(marrow_core STATIC
+    ids.hpp
+    uuid.cpp
+    uuid.hpp
     version.cpp
     version.hpp)
 
