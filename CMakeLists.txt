@@ -18,5 +18,8 @@ target_compile_options(marrow_warnings INTERFACE
     /utf-8
     $<$<BOOL:${MARROW_WARNINGS_AS_ERRORS}>:/WX>)
 
+enable_testing()
+
 add_subdirectory(src/core)
 add_subdirectory(src/app)
+add_subdirectory(tests)
