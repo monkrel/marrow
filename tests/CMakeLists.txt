@@ -1,6 +1,8 @@
 find_package(Catch2 CONFIG REQUIRED)
 
 add_executable(marrow_unit_tests
+    unit/layout_tests.cpp
+    unit/model_builders.hpp
     unit/uuid_tests.cpp
     unit/version_tests.cpp)
 

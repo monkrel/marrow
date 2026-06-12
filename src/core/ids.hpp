@@ -3,6 +3,7 @@
 #include "core/uuid.hpp"
 
 #include <cstdint>
+#include <string>
 
 namespace marrow {
 
@@ -17,6 +18,11 @@ struct TypedId {
 
     auto operator<=>(const TypedId&) const = default;
 };
+
+template <typename Tag>
+std::string to_string(const TypedId<Tag>& id) {
+    return id.value.to_string();
+}
 
 using ClassId = TypedId<struct ClassIdTag>;
 using EnumId = TypedId<struct EnumIdTag>;
